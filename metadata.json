@@ -1,0 +1,6 @@
+{
+  "name": "AUREVIAN ALGO TRADER",
+  "description": "Cryptocurrency algorithmic paper-trading, quantitative strategy engine, backtesting and technical analysis platform founded by Sehaj Jatana.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

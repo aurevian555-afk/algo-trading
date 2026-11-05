@@ -1,0 +1,6 @@
+{
+  "summary": "Comprehensive error audit and repair plan for Aurevian Algo Trader. Covers memory optimization for 4 GB RAM Windows 10 PCs, 150-candle cache tuning, network auto-retry with exponential backoff, 100-log runtime memory capping, full-theme dark/light token normalization across all sections, and trading daemon stability guards.",
+  "updatedAt": "2026-11-05T11:46:00.079624029Z",
+  "requestFeedback": true,
+  "userFacing": true
+}

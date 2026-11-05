@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+:root {
+  --bg-main: #F5F6F8;
+  --bg-sidebar: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-card-sub: #F5F6F8;
+  --border-main: #E5E7EB;
+  --border-sub: #D1D5DB;
+  --text-primary: #20242B;
+  --text-secondary: #737B87;
+  --text-muted: #A0A5AE;
+  --accent-blue: #2962FF;
+  --accent-purple: #9065E8;
+  --color-green: #089981;
+  --color-red: #F23645;
+}
+
+.dark {
+  --bg-main: #050505;
+  --bg-sidebar: #101010;
+  --bg-card: #151515;
+  --bg-card-sub: #0A0A0C;
+  --border-main: #292929;
+  --border-sub: #383838;
+  --text-primary: #FFFFFF;
+  --text-secondary: #A0A0A0;
+  --text-muted: #737B87;
+  --accent-blue: #398BFF;
+  --accent-purple: #9065E8;
+  --color-green: #36B87A;
+  --color-red: #EF5350;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    user-select: none;
+    overflow: hidden;
+    transition: background-color 0.15s ease, color 0.15s ease;
+  }
+}
+
+/* Comprehensive Dark Mode overrides for seamless app-wide adaptation */
+.dark .bg-\[\#FFFFFF\],
+.dark .bg-white {
+  background-color: #151515 !important;
+}
+
+.dark .bg-\[\#F5F6F8\],
+.dark .bg-\[\#FAFAFB\],
+.dark .bg-\[\#F9FAFB\] {
+  background-color: #0A0A0C !important;
+}
+
+.dark .text-\[\#20242B\] {
+  color: #FFFFFF !important;
+}
+
+.dark .text-\[\#737B87\] {
+  color: #A0A0A0 !important;
+}
+
+.dark .text-\[\#A0A5AE\] {
+  color: #737B87 !important;
+}
+
+.dark .border-\[\#E5E7EB\] {
+  border-color: #292929 !important;
+}
+
+.dark .border-\[\#D1D5DB\] {
+  border-color: #383838 !important;
+}
+
+.dark .border-\[\#F5F6F8\] {
+  border-color: #202024 !important;
+}
+
+.dark .text-\[\#2962FF\] {
+  color: #398BFF !important;
+}
+
+.dark .border-\[\#2962FF\] {
+  border-color: #398BFF !important;
+}
+
+.dark .bg-\[\#2962FF\] {
+  background-color: #398BFF !important;
+}
+
+.dark input,
+.dark select,
+.dark textarea {
+  background-color: #151515 !important;
+  color: #FFFFFF !important;
+  border-color: #292929 !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #737B87 !important;
+}
+
+.dark table th {
+  background-color: #101010 !important;
+  color: #A0A0A0 !important;
+  border-color: #292929 !important;
+}
+
+.dark table td {
+  border-color: #292929 !important;
+}
+
+.dark table tr:hover {
+  background-color: #18181C !important;
+}
+
+/* Subtle scrollbars for both themes */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--border-main);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--border-sub);
+}
